@@ -79,7 +79,7 @@ public String GetText(WebElement element) {
 public String GetExcelData(String shNo,int rNo,int cNo) throws IOException {
 	String value=null;
 	FileInputStream fi=new FileInputStream
-			("C:\\Users\\NOLAN\\eclipse-workspace\\TestNgTable\\src\\test\\resources\\ExcelData\\ParaBank.xlsx");
+			("C:\\Users\\NOLAN\\eclipse-workspace\\New folder\\ParabankRegistering\\src\\test\\resources\\ExcelData\\ParaBank.xlsx");
 	Workbook wb=new XSSFWorkbook(fi);
 	Sheet sheet = wb.getSheet(shNo);
 	Row row = sheet.getRow(rNo);
@@ -121,4 +121,5 @@ public void verification(WebElement element,String text) {
 		System.out.println(text + " is verified UnSucessfull");
 	}
 }
+
 }

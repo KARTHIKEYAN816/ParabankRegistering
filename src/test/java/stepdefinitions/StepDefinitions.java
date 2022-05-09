@@ -20,8 +20,10 @@ public class StepDefinitions extends BaseClass {
 	}
 	@Then("User verifies Home Page is Displayed")
 	public void user_verifies_home_page_is_displayed() {
+		
 		SoftAssert soft=new SoftAssert();
-		soft.assertEquals(b.GetText(y.getHomePageVerification()), "Experience the difference"); //"Experience the difference");
+		soft.assertEquals(b.GetText(y.getHomePageVerification()),"Experience the difference" , "Experience the difference");
+		//soft.assertEquals(b.GetText(y.getHomePageVerification()), "Experience the difference"); //"Experience the difference");
 	   soft.assertAll();
 		
 	}
